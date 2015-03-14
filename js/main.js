@@ -1,3 +1,6 @@
+function validate(evt) {
+
+}
 Zepto(function($){
   var calc = function(radius, volume, height) {
     if(volume != '') {
@@ -12,7 +15,16 @@ Zepto(function($){
       'height' : height
     }
   }
-
+  $('#diameter, #volume, #height').on('keypress', function(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  })
   $('#diameter, #volume, #height').on('change', function(e) {
     var radius = $('#diameter').val() / 2;
     var volume = $('#volume').val();
