@@ -20,11 +20,11 @@
               <h1>Volume Calculator</h1>
               <fieldset>
                 <label for="diameter">Diameter (cm)</label>
-                <input type="text" id="diameter" name="diameter" required="required" class="fields" />
+                <input type="number" step="any" min="0" id="diameter" name="diameter" required="required" class="fields" />
                 <label for="volume">Volume (l)</label>
-                <input type="text" id="volume" name="volume" class="fields" />
+                <input type="number" step="any" min="0" id="volume" name="volume" class="fields" />
                 <label for="height">Height (cm)</label>
-                <input type="text" id="height" name="height"  class="fields" />
+                <input type="number" step="any" min="0" id="height" name="height"  class="fields" />
                 <input type="submit" value="Calculate" class="btn" />
               </fieldset>
             </form>
