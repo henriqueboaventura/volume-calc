@@ -1,6 +1,6 @@
 CACHE MANIFEST
 index.html
 js/main.js
-js/vendor/jquery.min.js
+js/vendor/zepto.min.js
 css/normalize.css
 css/main.css

@@ -105,21 +105,21 @@ body {
   width: 100%;
 }
 h1 {
-  font-size: 1.7em;
-}
-h2 {
-  font-size: 1.1em;
+  font-size: 1.9em;
 }
 form {
   margin: 10px;
 }
-form label {
+fieldset {
+  font-size: 1.5em;
+}
+label {
   display: block;
   clear:both;
   margin: 10px 0px 5px 0px;
   width: 100%;
 }
-form label:after {
+label:after {
   content: ':';
 }
 input {
@@ -131,7 +131,6 @@ form input.fields {
   border: none;
   clear:both;
   color: #525252;
-  height: 30px;
   line-height: 15px;
   margin-bottom: 16px;
   margin-right: 6px;

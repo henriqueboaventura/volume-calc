@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+Zepto(function($){
   var calc = function(radius, volume, height) {
     if(volume != '') {
       var1 = Math.PI * (radius*radius);
