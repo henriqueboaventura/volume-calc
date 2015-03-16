@@ -100,6 +100,8 @@ body {
   font: 1.1em "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D3D3D3;
   text-shadow: 1px 1px 1px #444;
+  margin: 0px;
+  padding: 0px;
 }
 #container {
   width: 100%;
