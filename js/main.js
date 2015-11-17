@@ -1,6 +1,3 @@
-function validate(evt) {
-
-}
 Zepto(function($){
   var calc = function(radius, volume, height) {
     if(volume != '') {
