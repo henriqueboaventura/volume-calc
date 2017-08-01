@@ -1,8 +1,8 @@
 CACHE MANIFEST
+# 2017-08-01:v2
 
 index.html
 js/main.js
 js/vendor/zepto.min.js
 css/main.css
 favicon.ico
-apple-touch-icon.png

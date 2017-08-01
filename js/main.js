@@ -1,3 +1,6 @@
+function validate(evt) {
+
+}
 Zepto(function($){
   var calc = function(radius, volume, height) {
     if(volume != '') {
@@ -12,6 +15,15 @@ Zepto(function($){
       'height' : height
     }
   }
+  //get diameter from url
+  var url_string = window.location.href;
+  var url = new URL(url_string);
+  var diameter = url.searchParams.get("diameter");
+  if(diameter != null) {
+    $('#diameter').val(diameter);
+    $('#volume').focus();
+  }
+  console.log(diameter);
   $('#diameter, #volume, #height').on('keypress', function(evt) {
     var theEvent = evt || window.event;
     var key = theEvent.keyCode || theEvent.which;
